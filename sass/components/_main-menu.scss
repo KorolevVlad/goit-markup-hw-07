@@ -1,0 +1,65 @@
+.main-menu {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.container-competence {
+  margin: 0 auto;
+}
+
+.achievement {
+  color: $secondary-text-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+@import '../utils/vs';
+
+.competence {
+  display: flex;
+  &__list {
+    margin: 0;
+    padding: 0;
+    margin-right: 30px;
+    width: 270px;
+  }
+  &__list:last-child {
+    margin-right: 0;
+  }
+  &__icon {
+    height: 120px;
+    margin-bottom: 30px;
+    background: #f5f4fa;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.competence {
+  &__icon-svg {
+    width: 70px;
+    height: 70px;
+  }
+  &__title {
+    color: $secondary-text-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  &__text {
+    margin: 0;
+  }
+}

@@ -8,7 +8,11 @@
   --black-color: #000;
 }
 
-img {
+.our-works__workplace{
+  display: block;
+}
+
+.portfolio-projects__photo {
   display: block;
 }
 
@@ -390,8 +394,9 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
   letter-spacing: 0.03em;
+
+  text-align: center;
   color: var(--secondary-text-color);
   text-transform: none;
   margin-bottom: 12px;
@@ -634,6 +639,7 @@ body {
 
 .competence {
   display: flex;
+  
 }
 
 .competence__list {
@@ -689,12 +695,9 @@ body {
 .our-works {
   display: flex;
   margin-top: 50px;
+  
 }
 
-.our-team__list {
-  display: flex;
-  margin-top: 50px;
-}
 
 .our-works__list {
   margin-right: 30px;
@@ -731,9 +734,19 @@ body {
   color: #ffffff;
 }
 
+.our-team__list {
+  display: flex;
+  margin-top: 50px;
+ 
+}
+
+
 .our-team {
   margin: 0 auto;
 }
+
+
+
 
 .our-work-team {
   background-color: #f5f4fa;
@@ -790,6 +803,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 16px;
+ 
 }
 
 .social-networks__link {
@@ -885,27 +899,35 @@ body {
   padding-left: 15px;
 }
 
+.container-footer__logo {
+  font-family: raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
 .container-footer__logo--web {
   color: var(--primare-blue-color);
 }
 
 .container-footer__logo--studio {
-  font-family: raleway, sans-serif;
+  /* font-family: raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  text-decoration: none;
-  color: var(--black-color);
+  text-decoration: none; */
+  /* color: var(--black-color); */
 
   margin-right: 94px;
 }
 
 .container-footer__logo--studio-white {
-  font-family: raleway, sans-serif;
+  /* font-family: raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  text-decoration: none;
+  text-decoration: none; */
   color: var(--primary-white-color);
 }
 
@@ -915,6 +937,7 @@ body {
   color: var(--primary-white-color);
   margin-top: 20px;
 }
+
 
 .footer-contacts__title {
   margin-top: 9px;
