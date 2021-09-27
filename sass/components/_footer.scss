@@ -1,4 +1,3 @@
-
 .footer {
   background-color: $medium-dark-color;
   text-align: left;
@@ -11,17 +10,25 @@
 }
 
 .container-footer {
-    display: flex;
-    align-items: baseline;
-    margin: 0 auto;
-  }
+  display: flex;
+  align-items: baseline;
+  margin: 0 auto;
+}
 
 .container-footer__logo {
-  font-family: raleway, sans-serif;
-  @extend %font-logo;
+  display: inline-flex;
+  @include font(
+    $subprimary-text-family,
+    normal,
+    700,
+    26px,
+    1.19,
+    0.03em,
+    $basic-text-color
+  );
   text-decoration: none;
   &--web {
-    color: $primare-blue-color;
+    color: $primary-blue-color;
   }
   &--studio {
     margin-right: 94px;
@@ -66,7 +73,16 @@
 
 .footer__follow-us {
   color: $primary-white-color;
-  @extend %font-bold;
+  @include font(
+    $primary-text-family,
+    normal,
+    700,
+    14px,
+    1.14,
+    0.03em,
+    $primary-white-color
+  );
+  text-transform: uppercase;
   margin: 0;
   margin-bottom: 20px;
 }
@@ -96,7 +112,7 @@
   }
   &__link:hover {
     color: $primary-white-color;
-    background-color: $primare-blue-color;
+    background-color: $primary-blue-color;
   }
   &__icon {
     fill: currentColor;
@@ -133,14 +149,22 @@
   align-items: center;
   justify-content: center;
 
-  @extend %font-button;
+  @include font(
+    $primary-text-family,
+    normal,
+    700,
+    16px,
+    1.87,
+    0.06em,
+    $basic-text-color
+  );
 
   width: 200px;
-  background: $primare-blue-color;
+  background: $primary-blue-color;
   color: $primary-white-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border: 1px solid $primare-blue-color;
+  border: 1px solid $primary-blue-color;
 
   cursor: pointer;
 }

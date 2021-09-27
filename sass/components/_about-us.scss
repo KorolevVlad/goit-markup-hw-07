@@ -1,4 +1,3 @@
-
 .info-about-us {
   margin: 0 auto;
 }
@@ -36,11 +35,14 @@
 }
 
 .our-works__image {
-  @extend %font-bold;
-
-  color: $primary-white-color;
-}
-
-img {
-  display: block;
+  @include font(
+    $primary-text-family,
+    normal,
+    700,
+    14px,
+    1.14,
+    0.03em,
+    $primary-white-color
+  );
+  text-transform: uppercase;
 }

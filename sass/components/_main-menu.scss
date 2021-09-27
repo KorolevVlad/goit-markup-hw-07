@@ -20,8 +20,6 @@
   margin-bottom: 50px;
 }
 
-@import '../utils/vs';
-
 .competence {
   display: flex;
   &__list {
@@ -50,11 +48,16 @@
     height: 70px;
   }
   &__title {
-    color: $secondary-text-color;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    @include font(
+      $primary-text-family,
+      normal,
+      700,
+      14px,
+      1.14,
+      0.03em,
+      $secondary-text-color
+    );
+
     text-transform: uppercase;
     margin: 0;
     margin-bottom: 10px;

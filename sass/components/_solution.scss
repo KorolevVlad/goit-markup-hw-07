@@ -1,10 +1,19 @@
-
 .solution {
   padding-top: 200px;
   padding-bottom: 200px;
-  color: $primary-white-color;
 
-  @extend %font-solution;
+  @include font(
+    $primary-text-family,
+    normal,
+    900,
+    44px,
+    1.36,
+    0.06em,
+    $primary-white-color
+  );
+  text-align: center;
+  text-transform: uppercase;
+
   max-width: 1600px;
   margin: auto;
 
@@ -15,7 +24,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(/images/bg-img.jpg);
+    url(../../images/bg-img.jpg);
   &__title {
     display: flex;
     flex-direction: column;
@@ -25,7 +34,18 @@
   &__text {
     color: $primary-white-color;
 
-    @extend %font-solution;
+    @include font(
+      $primary-text-family,
+      normal,
+      900,
+      44px,
+      1.36,
+      0.06em,
+      $primary-white-color
+    );
+    text-align: center;
+    text-transform: uppercase;
+
     max-width: 696px;
     margin: 0 auto;
     margin-bottom: 30px;
@@ -33,10 +53,19 @@
 }
 
 .solution__button {
-  background-color: $primare-blue-color;
+  background-color: $primary-blue-color;
   color: $primary-white-color;
 
-  @extend %font-button;
+  @include font(
+    $primary-text-family,
+    normal,
+    700,
+    16px,
+    1.87,
+    0.06em,
+    $primary-white-color
+  );
+
   padding: 10px 32px;
   border-radius: 6px;
   text-align: center;
